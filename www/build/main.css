@@ -26970,7 +26970,7 @@ section {
 
 section p {
   color: #7c7c7c;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 section h4 {
@@ -27001,11 +27001,11 @@ ion-footer ion-toolbar .toolbar-content button {
 }
 
 ion-footer ion-toolbar .toolbar-content button:hover {
-  background-color: #ff533d;
+  background-color: #4f6696;
 }
 
 ion-footer ion-toolbar .toolbar-content button.active {
-  background-color: #ff533d;
+  background-color: #4f6696;
 }
 
 ion-footer ion-toolbar .toolbar-content button .wrapper {
@@ -27029,10 +27029,6 @@ ion-footer ion-toolbar .toolbar-content button .button-inner p {
   font-size: 12px;
   margin: 0;
   text-transform: capitalize;
-}
-
-.platform-ios p {
-  font-size: 28px;
 }
 
 .platform-ios ion-footer ion-toolbar .toolbar-content button .button-inner ion-icon {
@@ -27093,7 +27089,7 @@ page-contact #map_canvas {
 
 page-contact header {
   padding: 0 5%;
-  background: url("../assets/design/contact-header-top.jpg") center center #090d18 no-repeat;
+  background: url("../assets/design/homescreen-background.jpg") center center #090d18 no-repeat;
   background-size: cover;
 }
 
@@ -27122,6 +27118,10 @@ page-contact section p ion-icon {
   left: -30px;
 }
 
+page-contact a.tel {
+  color: #7c7c7c;
+}
+
 page-home .home-header {
   background: url("../assets/design/homescreen-background.jpg") center center #090d18 no-repeat;
   background-size: cover;
@@ -27131,7 +27131,7 @@ page-home .home-header {
 page-home .home-header img {
   display: block;
   width: 70%;
-  margin: 0 auto 20em;
+  margin: 20px auto 20em;
 }
 
 page-home .home-sub-header {
@@ -27141,7 +27141,7 @@ page-home .home-sub-header {
 
 page-home .home-sub-header button {
   background-color: #ff533d;
-  border-radius: 1px;
+  border-radius: 30px;
   margin-bottom: 1em;
   text-align: left;
   font-weight: bold;
@@ -27187,6 +27187,15 @@ page-home ion-slides ion-card-content {
 
 page-home .swiper-slide img {
   width: 100%;
+}
+
+page-home .swiper-pagination {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+page-home .card-content {
+  padding-bottom: 30px;
 }
 
 page-list span.span-title {

@@ -6,8 +6,8 @@
   <content src="index.html"/>
   <access origin="https://cmsauto.com"/>
   <access origin="http://api.cmsauto.com"/>
+  <access origin="https://maps.googleapis.com"/>
   <allow-navigation href="https://cmsauto.com/*"/>
-  <allow-navigation href="http://ionic.local/*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>

@@ -26969,7 +26969,8 @@ section {
 }
 
 section p {
-  color: #c2c2c2;
+  color: #7c7c7c;
+  font-size: 16px;
 }
 
 section h4 {
@@ -27019,6 +27020,10 @@ ion-footer ion-toolbar .toolbar-content button .button-inner p {
   font-size: 12px;
   margin: 0;
   text-transform: capitalize;
+}
+
+.platform-ios p {
+  font-size: 28px;
 }
 
 .platform-ios ion-footer ion-toolbar .toolbar-content button .button-inner ion-icon {

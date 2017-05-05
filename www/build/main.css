@@ -26997,6 +26997,15 @@ ion-footer ion-toolbar .toolbar-content button {
   margin: 0;
   height: 100%;
   position: relative;
+  color: #fff;
+}
+
+ion-footer ion-toolbar .toolbar-content button:hover {
+  background-color: #ff533d;
+}
+
+ion-footer ion-toolbar .toolbar-content button.active {
+  background-color: #ff533d;
 }
 
 ion-footer ion-toolbar .toolbar-content button .wrapper {

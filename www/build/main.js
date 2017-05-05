@@ -77265,8 +77265,8 @@ var MyApp = (function () {
         this.platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            // this.statusBar.backgroundColorByHexString('#0e1628');
             _this.statusBar.styleBlackOpaque();
+            _this.statusBar.backgroundColorByHexString('#000');
             // this.statusBar.styleDefault();
             _this.splashScreen.hide();
             _this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */]);

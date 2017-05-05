@@ -58279,7 +58279,7 @@ var HomePage = (function () {
         });
     };
     HomePage.prototype.openPage = function (page) {
-        this.appCtrl.getRootNav().setRoot(__WEBPACK_IMPORTED_MODULE_4__list_list__["a" /* ListPage */]);
+        this.appCtrl.getRootNav().setRoot(page);
     };
     return HomePage;
 }());

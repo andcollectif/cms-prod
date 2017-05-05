@@ -44835,14 +44835,14 @@ var HomePage = (function () {
         this.appCtrl.getRootNav().setRoot(page);
     };
     HomePage.prototype.checkNetwork = function () {
-        console.log(this.network.type);
-        if (this.network.type === 'none') {
-            this.presentAlert();
-        }
+        // if (this.network.type == 'none') {
+        //   this.presentAlert();
+        // }
+        this.presentAlert();
     };
     HomePage.prototype.presentAlert = function () {
         var alert = this.alertCtrl.create({
-            title: 'Hors Ligne',
+            title: this.network.type,
             subTitle: 'Cette application a besoins d\'internet pour fonctionner normalement',
             buttons: ['Ok']
         });

@@ -27126,13 +27126,12 @@ page-home .home-header {
   background: url("../assets/design/homescreen-background.jpg") center center #090d18 no-repeat;
   background-size: cover;
   padding: 1em;
-  padding-top: 0;
 }
 
 page-home .home-header img {
   display: block;
   width: 70%;
-  margin: 20px auto 12em;
+  margin: 0 auto 12em;
 }
 
 page-home .home-sub-header {
@@ -27197,6 +27196,10 @@ page-home .swiper-pagination {
 
 page-home .card-content {
   padding-bottom: 30px;
+}
+
+page-home .scroll-content {
+  background-color: #090d18;
 }
 
 page-list span.span-title {

@@ -26,8 +26,6 @@
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
   <preference name="orientation" value="portrait" />
-  <preference name="StatusBarBackgroundColor" value="#0e1628"/>
-  <preference name="StatusBarStyle" value="#FFFFFF" />
   <platform name="android">
     <allow-intent href="market:*"/>
     <icon src="res/android/icon/drawable-ldpi-icon.png" density="ldpi"/>

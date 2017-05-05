@@ -47005,7 +47005,6 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Version */]
 
 
 
-//# sourceMappingURL=index.js.map 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -47021,9 +47020,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Version */]
 /**
  * @private
  */
-/**
- * @private
- */ function get(obj, path) {
+function get(obj, path) {
     path = path.split('.');
     for (var i = 0; i < path.length; i++) {
         if (!obj) {
@@ -47085,7 +47082,6 @@ var cordovaWarn = function (pluginName, method) {
         console.warn('Native: tried accessing the ' + pluginName + ' plugin but Cordova is not available. Make sure to include cordova.js or run in a device/simulator');
     }
 };
-//# sourceMappingURL=util.js.map 
 //# sourceMappingURL=util.js.map
 
 /***/ }),
@@ -47102,25 +47098,18 @@ var cordovaWarn = function (pluginName, method) {
 /* unused harmony export InAppBrowserObject */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InAppBrowser; });
 var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b)
-        if (b.hasOwnProperty(p))
-            d[p] = b[p];
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
-        r = Reflect.decorate(decorators, target, key, desc);
-    else
-        for (var i = decorators.length - 1; i >= 0; i--)
-            if (d = decorators[i])
-                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
-        return Reflect.metadata(k, v);
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
 
@@ -47184,33 +47173,33 @@ var InAppBrowserObject = (function () {
         return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].fromEvent(this._objectInstance, event);
     };
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])({ sync: true }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])({ sync: true }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], InAppBrowserObject.prototype, "show", null);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])({ sync: true }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])({ sync: true }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], InAppBrowserObject.prototype, "close", null);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])({ sync: true }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])({ sync: true }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], InAppBrowserObject.prototype, "hide", null);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])(),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', [Object]),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
         __metadata('design:returntype', Promise)
     ], InAppBrowserObject.prototype, "executeScript", null);
     __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])(),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', [Object]),
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["a" /* CordovaInstance */])(), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
         __metadata('design:returntype', Promise)
     ], InAppBrowserObject.prototype, "insertCSS", null);
     return InAppBrowserObject;
@@ -47270,12 +47259,11 @@ var InAppBrowser = (function (_super) {
             pluginRef: 'cordova.InAppBrowser',
             repo: 'https://github.com/apache/cordova-plugin-inappbrowser',
             platforms: ['Amazon', 'Android', 'BlackBerry 10', 'Browser', 'Firefox OS', 'iOS', 'OS X', 'Ubuntu', 'Windows', 'Windows Phone']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], InAppBrowser);
     return InAppBrowser;
 }(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["c" /* IonicNativePlugin */]));
-//# sourceMappingURL=index.js.map 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -58433,9 +58421,7 @@ function instanceAvailability(pluginObj, methodName) {
     return pluginObj._objectInstance && (!methodName || typeof pluginObj._objectInstance[methodName] !== 'undefined');
 }
 function setIndex(args, opts, resolve, reject) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     // ignore resolve and reject in case sync
     if (opts.sync) {
         return args;
@@ -58499,9 +58485,7 @@ function setIndex(args, opts, resolve, reject) {
     return args;
 }
 function callCordovaPlugin(pluginObj, methodName, args, opts, resolve, reject) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     // Try to figure out where the success/error callbacks need to be bound
     // to our promise resolve/reject handlers.
     args = setIndex(args, opts, resolve, reject);
@@ -58515,9 +58499,7 @@ function callCordovaPlugin(pluginObj, methodName, args, opts, resolve, reject) {
     }
 }
 function wrapPromise(pluginObj, methodName, args, opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     var pluginResult, rej;
     var p = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__util__["a" /* getPromise */])(function (resolve, reject) {
         pluginResult = callCordovaPlugin(pluginObj, methodName, args, opts, resolve, reject);
@@ -58533,9 +58515,7 @@ function wrapPromise(pluginObj, methodName, args, opts) {
     return p;
 }
 function wrapOtherPromise(pluginObj, methodName, args, opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__util__["a" /* getPromise */])(function (resolve, reject) {
         var pluginResult = callCordovaPlugin(pluginObj, methodName, args, opts);
         if (pluginResult) {
@@ -58552,9 +58532,7 @@ function wrapOtherPromise(pluginObj, methodName, args, opts) {
     });
 }
 function wrapObservable(pluginObj, methodName, args, opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (observer) {
         var pluginResult = callCordovaPlugin(pluginObj, methodName, args, opts, observer.next.bind(observer), observer.error.bind(observer));
         if (pluginResult && pluginResult.error) {
@@ -58578,9 +58556,7 @@ function wrapObservable(pluginObj, methodName, args, opts) {
     });
 }
 function callInstance(pluginObj, methodName, args, opts, resolve, reject) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     args = setIndex(args, opts, resolve, reject);
     if (instanceAvailability(pluginObj, methodName)) {
         return pluginObj._objectInstance[methodName].apply(pluginObj._objectInstance, args);
@@ -58594,9 +58570,7 @@ function callInstance(pluginObj, methodName, args, opts, resolve, reject) {
  * @returns {Observable}
  */
 function wrapEventObservable(event, element) {
-    if (element === void 0) {
-        element = window;
-    }
+    if (element === void 0) { element = window; }
     return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].fromEvent(element, event);
 }
 /**
@@ -58608,9 +58582,7 @@ function wrapEventObservable(event, element) {
  * @private
  */
 function overrideFunction(pluginObj, methodName, args, opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return new __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"](function (observer) {
         var availabilityCheck = checkAvailability(pluginObj, methodName);
         if (availabilityCheck === true) {
@@ -58628,9 +58600,7 @@ function overrideFunction(pluginObj, methodName, args, opts) {
  * @private
  */
 var wrap = function (pluginObj, methodName, opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function () {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
@@ -58658,9 +58628,7 @@ var wrap = function (pluginObj, methodName, opts) {
  * @private
  */
 function wrapInstance(pluginObj, methodName, opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function () {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
@@ -58712,7 +58680,6 @@ function wrapInstance(pluginObj, methodName, opts) {
         }
     };
 }
-//# sourceMappingURL=plugin.js.map 
 //# sourceMappingURL=plugin.js.map
 
 /***/ }),
@@ -58725,17 +58692,12 @@ function wrapInstance(pluginObj, methodName, opts) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SplashScreen; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
-        r = Reflect.decorate(decorators, target, key, desc);
-    else
-        for (var i = decorators.length - 1; i >= 0; i--)
-            if (d = decorators[i])
-                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
-        return Reflect.metadata(k, v);
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
 
@@ -58774,17 +58736,17 @@ var SplashScreen = (function () {
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], SplashScreen.prototype, "show", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], SplashScreen.prototype, "hide", null);
     SplashScreen = __decorate([
@@ -58793,12 +58755,11 @@ var SplashScreen = (function () {
             plugin: 'cordova-plugin-splashscreen',
             pluginRef: 'navigator.splashscreen',
             repo: 'https://github.com/apache/cordova-plugin-splashscreen'
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], SplashScreen);
     return SplashScreen;
 }());
-//# sourceMappingURL=index.js.map 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -58811,17 +58772,12 @@ var SplashScreen = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StatusBar; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
-        r = Reflect.decorate(decorators, target, key, desc);
-    else
-        for (var i = decorators.length - 1; i >= 0; i--)
-            if (d = decorators[i])
-                r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
-        return Reflect.metadata(k, v);
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
 
@@ -58915,77 +58871,77 @@ var StatusBar = (function () {
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', [Boolean]),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Boolean]), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "overlaysWebView", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "styleDefault", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "styleLightContent", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "styleBlackTranslucent", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "styleBlackOpaque", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', [String]),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "backgroundColorByName", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', [String]),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [String]), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "backgroundColorByHexString", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "hide", null);
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["d" /* Cordova */])({
             sync: true
-        }),
-        __metadata('design:type', Function),
-        __metadata('design:paramtypes', []),
+        }), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
         __metadata('design:returntype', void 0)
     ], StatusBar.prototype, "show", null);
     __decorate([
-        __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["e" /* CordovaProperty */],
+        __WEBPACK_IMPORTED_MODULE_1__ionic_native_core__["e" /* CordovaProperty */], 
         __metadata('design:type', Boolean)
     ], StatusBar.prototype, "isVisible", void 0);
     StatusBar = __decorate([
@@ -58995,12 +58951,11 @@ var StatusBar = (function () {
             pluginRef: 'StatusBar',
             repo: 'https://github.com/apache/cordova-plugin-statusbar',
             platforms: ['iOS', 'Android', 'Windows Phone 8', 'Windows 8', 'Windows 10']
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], StatusBar);
     return StatusBar;
 }());
-//# sourceMappingURL=index.js.map 
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -76896,24 +76851,27 @@ exports.tryCatch = tryCatch;
 /***/ (function(module, exports) {
 
 var g;
+
 // This works in non-strict mode
-g = (function () {
-    return this;
+g = (function() {
+	return this;
 })();
+
 try {
-    // This works if eval is allowed (see CSP)
-    g = g || Function("return this")() || (1, eval)("this");
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
 }
-catch (e) {
-    // This works if the window reference is available
-    if (typeof window === "object")
-        g = window;
-}
+
 // g can still be undefined, but nothing to do about it...
 // We return undefined, instead of nothing here, so it's
 // easier to handle this case. if(!global) { ...}
+
 module.exports = g;
-//# sourceMappingURL=global.js.map
+
 
 /***/ }),
 /* 202 */
@@ -103417,7 +103375,6 @@ function checkReady() {
         }
     }, DEVICE_READY_TIMEOUT);
 }
-//# sourceMappingURL=bootstrap.js.map 
 //# sourceMappingURL=bootstrap.js.map
 
 /***/ }),
@@ -103448,9 +103405,7 @@ function checkReady() {
  * @private
  */
 function InstanceCheck(opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function (pluginObj, methodName, descriptor) {
         return {
             value: function () {
@@ -103479,9 +103434,7 @@ function InstanceCheck(opts) {
  * @private
  */
 function CordovaCheck(opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function (pluginObj, methodName, descriptor) {
         return {
             value: function () {
@@ -103565,9 +103518,7 @@ function Plugin(config) {
  * and the required plugin are installed.
  */
 function Cordova(opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function (target, methodName, descriptor) {
         return {
             value: function () {
@@ -103586,9 +103537,7 @@ function Cordova(opts) {
  * Wrap an instance method
  */
 function CordovaInstance(opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function (target, methodName) {
         return {
             value: function () {
@@ -103649,9 +103598,7 @@ function InstanceProperty(target, key) {
  * and the required plugin are installed.
  */
 function CordovaFunctionOverride(opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     return function (target, methodName, descriptor) {
         return {
             value: function () {
@@ -103671,9 +103618,7 @@ function CordovaFunctionOverride(opts) {
  *
  */
 function CordovaFiniteObservable(opts) {
-    if (opts === void 0) {
-        opts = {};
-    }
+    if (opts === void 0) { opts = {}; }
     if (opts.observable === false) {
         throw new Error('CordovaFiniteObservable decorator can only be used on methods that returns observable. Please provide correct option.');
     }
@@ -103705,7 +103650,6 @@ function CordovaFiniteObservable(opts) {
         };
     };
 }
-//# sourceMappingURL=decorators.js.map 
 //# sourceMappingURL=decorators.js.map
 
 /***/ }),
@@ -103740,7 +103684,6 @@ var IonicNativePlugin = (function () {
     IonicNativePlugin.getPluginInstallName = function () { return; };
     return IonicNativePlugin;
 }());
-//# sourceMappingURL=ionic-native-plugin.js.map 
 //# sourceMappingURL=ionic-native-plugin.js.map
 
 /***/ }),

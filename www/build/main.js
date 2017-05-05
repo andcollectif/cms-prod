@@ -58113,7 +58113,7 @@ var ContactPage = (function () {
 ContactPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPage */])(),
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/diplomeo/Projects/cms/cms/src/pages/contact/contact.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>nous contacter</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="home">\n    <header>\n        <h1>Car Marketing System</h1>\n    </header>\n    <section>\n        <p>\n            <ion-icon name="navigate"></ion-icon>\n            Visitez notre Showroom <br>\n            24 Boulevard Gouvion Saint Cyr, <br>\n            75017 Paris\n        </p>\n    </section>\n    <section class="map">\n        <div id="map_canvas"></div>\n    </section>\n    <section>\n        <p>\n            <ion-icon name="mail"></ion-icon>\n            <a href="mailto:sebastien.kalinine@gmail.com" target="_top">\n            contac@cmsauto.com\n            </a>\n        </p>\n        <p><ion-icon name="call"></ion-icon>01 55 74 01 01</p>\n    </section>\n</ion-content>\n'/*ion-inline-end:"/Users/diplomeo/Projects/cms/cms/src/pages/contact/contact.html"*/,
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/diplomeo/Projects/cms/cms/src/pages/contact/contact.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Nous contacter</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content class="home">\n    <header>\n        <h1>Car Marketing System</h1>\n    </header>\n    <section>\n        <p>\n            <ion-icon name="navigate"></ion-icon>\n            Visitez notre Showroom <br>\n            24 Boulevard Gouvion Saint Cyr, <br>\n            75017 Paris\n        </p>\n    </section>\n    <section class="map">\n        <div id="map_canvas"></div>\n    </section>\n    <section>\n        <p>\n            <ion-icon name="mail"></ion-icon>\n            <a href="mailto:contact@cmsauto.com" target="_top">\n            contact@cmsauto.com\n            </a>\n        </p>\n        <p><ion-icon name="call"></ion-icon>01 55 74 01 01</p>\n    </section>\n</ion-content>\n'/*ion-inline-end:"/Users/diplomeo/Projects/cms/cms/src/pages/contact/contact.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
 ], ContactPage);
@@ -77259,7 +77259,9 @@ var MyApp = (function () {
         this.platform.ready().then(function () {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            _this.statusBar.styleDefault();
+            // this.statusBar.backgroundColorByHexString('#0e1628');
+            _this.statusBar.styleBlackOpaque();
+            // this.statusBar.styleDefault();
             _this.splashScreen.hide();
         });
     };
@@ -77268,6 +77270,11 @@ var MyApp = (function () {
         // we wouldn't want the back button to show in this scenario
         this.nav.setRoot(page.component);
     };
+    MyApp.prototype.isActive = function (page) {
+        if (page === this.rootPage) {
+            return 'active';
+        }
+    };
     return MyApp;
 }());
 __decorate([
@@ -77275,7 +77282,7 @@ __decorate([
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Users/diplomeo/Projects/cms/cms/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n<ion-footer>\n  <ion-toolbar color="dark-blue">\n    <button class="button-tabs" ion-button icon-only *ngFor="let p of tabs" (click)="openPage(p)">\n      <div class="wrapper">\n        <ion-icon name="{{ p.icon }}"></ion-icon>\n        <p>{{ p.title }}</p>\n      </div>\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/diplomeo/Projects/cms/cms/src/app/app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"/Users/diplomeo/Projects/cms/cms/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n<ion-footer>\n  <ion-toolbar color="dark-blue">\n    <button class="button-tabs" ion-button icon-only *ngFor="let p of tabs" (click)="openPage(p)">\n      <div class="wrapper">\n        <ion-icon name="{{ p.icon }}"></ion-icon>\n        <p>{{ p.title }}</p>\n      </div>\n    </button>\n  </ion-toolbar>\n</ion-footer>'/*ion-inline-end:"/Users/diplomeo/Projects/cms/cms/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);

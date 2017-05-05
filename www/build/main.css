@@ -27126,6 +27126,7 @@ page-home .home-header {
   background: url("../assets/design/homescreen-background.jpg") center center #090d18 no-repeat;
   background-size: cover;
   padding: 1em;
+  padding-top: 0;
 }
 
 page-home .home-header img {

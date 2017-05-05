@@ -58318,12 +58318,8 @@ var CmsCars = (function () {
     function CmsCars(http) {
         this.http = http;
     }
-    // load(offset, max): Observable<Car[]> {
-    //   return this.http.get(`http://api.cmsauto.com/cars?offset=` + offset + `&max=` + max)
-    //     .map(res => <Car[]>res.json());
-    // }
     CmsCars.prototype.load = function (offset, max) {
-        return this.http.get("assets/fixtures/users.json")
+        return this.http.get("http://api.cmsauto.com/cars?offset=" + offset + "&max=" + max)
             .map(function (res) { return res.json(); });
     };
     return CmsCars;
@@ -58361,12 +58357,8 @@ var CmsNews = (function () {
     function CmsNews(http) {
         this.http = http;
     }
-    // load(offset): Observable<News[]> {
-    //   return this.http.get(`http://api.cmsauto.com/news?offset=` + offset)
-    //     .map(res => <News[]>res.json());
-    // }
     CmsNews.prototype.load = function (offset) {
-        return this.http.get("assets/fixtures/news.json")
+        return this.http.get("http://api.cmsauto.com/news?offset=" + offset)
             .map(function (res) { return res.json(); });
     };
     return CmsNews;

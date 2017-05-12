@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <widget id="com.ionicframework.cms357458" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Car Marketing System</name>
   <description>Entreprise CMS</description>
@@ -20,11 +20,12 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
-  <preference name="SplashMaintainAspectRatio" value="true"/>
+  <preference name="SplashMaintainAspectRatio" value="false"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
-  <preference name="SplashShowOnlyFirstTime" value="true"/>
+  <preference name="SplashShowOnlyFirstTime" value="false"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="SplashScreenDelay" value="30000"/>
   <preference name="orientation" value="portrait" />
   <platform name="android">
     <allow-intent href="market:*"/>

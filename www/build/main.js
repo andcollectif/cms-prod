@@ -44713,6 +44713,10 @@ var CarsPage = (function () {
         this.iab = iab;
         this.loadingCtrl = loadingCtrl;
         this.filterClass = "filters hide";
+        this.listClass = "show";
+        this.staticClass = "hide";
+        this.listTabClass = "active";
+        this.staticTabClass = "";
         this.offset = 0;
         this.max = 2900;
         cmsCars.load(this.offset, this.max).subscribe(function (cars) {
@@ -44762,11 +44766,23 @@ var CarsPage = (function () {
             this.filterClass = "filters show";
         }
     };
+    CarsPage.prototype.toggleList = function () {
+        this.listClass = "active show";
+        this.staticClass = "hide";
+        this.listTabClass = "active";
+        this.staticTabClass = "";
+    };
+    CarsPage.prototype.toggleStatic = function () {
+        this.staticClass = "show";
+        this.listClass = "hide";
+        this.staticTabClass = "active";
+        this.listTabClass = "";
+    };
     return CarsPage;
 }());
 CarsPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-cars',template:/*ion-inline-start:"/Users/diplomeo/Projects/cms/cms/src/pages/cars/cars.html"*/'<ion-header>\n  <ion-navbar primary>\n    <ion-title>\n      Véhicules\n    </ion-title>\n    <ion-buttons end>\n      <button (click)="toggleFilter()" ion-button icon-only>\n        <ion-icon name="funnel"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n  <div [class]="filterClass">\n    <p>Loyer mensuel maximum :</p>\n    <ion-range step="100" pin="true" min="200" max="2900" [(ngModel)]="max" (ionBlur)="load()">\n      <ion-icon range-left>200 €</ion-icon>\n      <ion-icon range-right>{{ max }} €</ion-icon>\n    </ion-range>\n  </div>\n</ion-header>\n<ion-content class="card-background-page">\n  <ion-list>\n    <ion-card class="cards-bg" ion-item *ngFor="let car of cars">\n      <img [src]="car.guid" (click)="launch(car.post_name)" />\n\n      <ion-card-content>\n        <ion-card-title>\n          {{ car.post_title }}\n        </ion-card-title>\n        <p>\n          <strong>Leasing à partir de :</strong>\n          {{ car.meta_value }} €\n        </p>\n      </ion-card-content>\n\n      <ion-row no-padding>\n        <ion-col text-left>\n          <button ion-button clear small color="danger" icon-left (click)="launch(car.post_name)">\n            <ion-icon name="arrow-forward" item-right></ion-icon>\n            Voir la fiche véhicule\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-card>\n  </ion-list>\n\n  <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n    <ion-infinite-scroll-content></ion-infinite-scroll-content>\n  </ion-infinite-scroll>\n</ion-content>'/*ion-inline-end:"/Users/diplomeo/Projects/cms/cms/src/pages/cars/cars.html"*/
+        selector: 'page-cars',template:/*ion-inline-start:"/Users/diplomeo/Projects/cms/cms/src/pages/cars/cars.html"*/'<ion-header>\n  <ion-navbar primary>\n    <ion-title>\n      Véhicules\n    </ion-title>\n    <ion-buttons end>\n      <button (click)="toggleFilter()" ion-button icon-only>\n        <ion-icon name="funnel"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n  <div [class]="filterClass">\n    <p>Loyer mensuel maximum :</p>\n    <ion-range step="100" pin="true" min="200" max="2900" [(ngModel)]="max" (ionBlur)="load()">\n      <ion-icon range-left>200 €</ion-icon>\n      <ion-icon range-right>{{ max }} €</ion-icon>\n    </ion-range>\n  </div>\n</ion-header>\n<ion-content>\n  <ul>\n    <li [class]="listTabClass"><a (click)="toggleList()" class="show-list">En stock</a></li><!-- WHITE SPACE\n    --><li [class]="staticTabClass"><a (click)="toggleStatic()" class="show-static">Déjà livrés</a></li>\n  </ul>\n  <ion-list [class]="listClass">\n    <ion-card class="cards-bg" ion-item *ngFor="let car of cars">\n      <img [src]="car.guid" (click)="launch(car.post_name)" />\n\n      <ion-card-content>\n        <ion-card-title>\n          {{ car.post_title }}\n        </ion-card-title>\n        <p>\n          <strong>Leasing à partir de :</strong>\n          {{ car.meta_value }} €\n        </p>\n      </ion-card-content>\n\n      <ion-row no-padding>\n        <ion-col text-left>\n          <button ion-button clear small color="danger" icon-left (click)="launch(car.post_name)">\n            <ion-icon name="arrow-forward" item-right></ion-icon>\n            Voir la fiche véhicule\n          </button>\n        </ion-col>\n      </ion-row>\n    </ion-card>\n    <ion-infinite-scroll (ionInfinite)="loadMore($event)">\n      <ion-infinite-scroll-content></ion-infinite-scroll-content>\n    </ion-infinite-scroll>\n  </ion-list>\n  <ion-list id="static" [class]="staticClass">\n    <ion-item>\n      <img src="assets/cars/car.jpg">\n    </ion-item><!--\n     --><ion-item>\n      <img src="assets/cars/car.jpg">\n    </ion-item><!--\n     --><ion-item>\n      <img src="assets/cars/car.jpg">\n    </ion-item><!--\n     --><ion-item>\n      <img src="assets/cars/car.jpg">\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/diplomeo/Projects/cms/cms/src/pages/cars/cars.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_cms_cars__["a" /* CmsCars */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_in_app_browser__["a" /* InAppBrowser */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */]])
 ], CarsPage);

@@ -27158,6 +27158,21 @@ page-cars #static ion-item {
   width: 50%;
 }
 
+page-cars #static ion-item.separator {
+  width: 100%;
+}
+
+page-cars #static ion-item h2 {
+  text-align: center;
+}
+
+page-cars #static hr {
+  width: 50%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 page-cars #static .item-md.item-block .item-inner {
   border: none;
 }
